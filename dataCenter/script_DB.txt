@@ -1,0 +1,50 @@
+CREATE TABLE `categories_artisanats`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                                     `categories` VARCHAR(255));
+                                     
+CREATE TABLE `identities`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                          `names` VARCHAR(255) NOT NULL,
+                          `last_name` VARCHAR(255) NOT NULL,
+                          `pseudo` VARCHAR(255) NOT NULL,
+                          `birthday` DATETIME,
+                          `phone1` INT NOT NULL,
+                          `phone2` INT NOT NULL,
+                          `address` INT NOT NULL,
+                          `email` VARCHAR(255),
+                          `linkedin` VARCHAR(255),
+                          `facebook` VARCHAR(255),
+                          `work` VARCHAR(255),
+                          `work_description` TEXT,
+                          `passwords` VARCHAR(255),
+                          `profile_link` VARCHAR(255),
+                         `id_categorie` INT NOT NULL,
+                         CONSTRAINT `fk_identities_id` FOREIGN KEY(`id_categorie`) REFERENCES `categories_artisanats`(`id`));
+
+CREATE TABLE `formations`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                          `places` VARCHAR(255),
+                          `dates` VARCHAR(255),
+                          `objects` VARCHAR(255),
+                          `descriptions` TEXT,
+                          `id_identity` INT NOT NULL,
+                          CONSTRAINT `fk_formations_id` FOREIGN KEY (`id_identity`) REFERENCES `identities`(`id`));
+
+CREATE TABLE `experiences`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                          `experience_name` VARCHAR(255),
+                          `dates` VARCHAR(255),
+                          `descriptions` TEXT,
+                          `id_identity` INT NOT NULL,
+                          CONSTRAINT `fk_experiences_id` FOREIGN KEY (`id_identity`) REFERENCES `identities`(`id`));
+                        
+CREATE TABLE `files`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                          `links` VARCHAR(255),
+                          `comments` TEXT,
+                          `id_identity` INT NOT NULL,
+                          CONSTRAINT `fk_files_id` FOREIGN KEY (`id_identity`) REFERENCES `identities`(`id`));
+                         
+
+CREATE TABLE `messengers`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                          `messages` TEXT,
+                          `dates` DATETIME,
+                          `id_identity` INT NOT NULL,
+                          CONSTRAINT `fk_messengers_id` FOREIGN KEY (`id_identity`) REFERENCES `identities`(`id`));
+                         
+                          			
