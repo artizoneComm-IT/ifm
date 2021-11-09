@@ -149,3 +149,8 @@ class Messages extends ConnectToDb
 		}
 	}
 }
+
+class Login extends ConnectToDb
+{
+	
+}
