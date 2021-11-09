@@ -38,6 +38,7 @@ CREATE TABLE `files`(`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                           `links` VARCHAR(255),
                           `comments` TEXT,
                           `id_identity` INT NOT NULL,
+                          `dates` DATETIME,
                           CONSTRAINT `fk_files_id` FOREIGN KEY (`id_identity`) REFERENCES `identities`(`id`));
                          
 

@@ -110,8 +110,8 @@ class Files extends ConnectToDb
 		try
 		{
 			$database = $this -> db_connect();
-			$requete = $requete -> prepare('INSERT INTO files(links, comments, id_identity)
-				VALUES(:links, :comments, :id_identity)');
+			$requete = $requete -> prepare('INSERT INTO files(links, comments, dates, id_identity)
+				VALUES(:links, :comments, NOW(), :id_identity)');
 			$requete -> execute($donnees);
 		}
 
@@ -139,7 +139,7 @@ class Messages extends ConnectToDb
 		{
 			$database = $this -> db_connect();
 			$requete = $database -> prepare('INSERT INTO messengers(messages, dates, id_identity)
-				VALUES(:messages, :dates, :id_identity)');
+				VALUES(:messages, NOW(), :id_identity)');
 			$requete -> execute($donnees);
 		}
 		
