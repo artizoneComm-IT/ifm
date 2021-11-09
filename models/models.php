@@ -133,5 +133,19 @@ class Messages extends ConnectToDb
 		$this -> defaultValue = $nombre;
 	}
 
-
+	private function inserer_messages(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare('INSERT INTO messengers(messages, dates, id_identity)
+				VALUES(:messages, :dates, :id_identity)');
+			$requete -> execute($donnees);
+		}
+		
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+	}
 }
