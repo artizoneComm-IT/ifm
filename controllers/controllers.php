@@ -54,7 +54,7 @@ class GetInfoCreateAccount
 		$this -> phone2 = strip_tags(trim($phone2));
 		$this -> addresses = strip_tags($addresses);
 		$this -> email = strip_tags(trim($email));
-		$this -> passwords = strip_tags($passwords);
+		$this -> passwords = $passwords;
 		$this -> id_categorie = strip_tags(trim($id_categorie));
 	}
 
@@ -71,6 +71,7 @@ class GetInfoCreateAccount
 			'email' => $this -> email,
 			'passwords' => $this -> passwords,
 			'id_categorie' => $this -> id_categorie);
+		return $infos;
 	}
 }
 
@@ -96,6 +97,7 @@ class GetInfoMessages
 		$infos = array(
 			'messages' => $this -> messages,
 			'id_identity' => $this -> id_identity);
+		return $infos;
 	}
 }
 
@@ -117,11 +119,13 @@ class GetInfoFiles
 		$this-> comments = strip_tags($comments);
 		$this-> id_identity = strip_tags($id_identity);
 	}
+
 	public function getInfo()
 	{
 		$infos = array(
 			'links' => $this -> links,
 			'comments' => $this -> comments,
 			'id_identity' => $this -> id_identity);
+		return $infos;
 	}
 }

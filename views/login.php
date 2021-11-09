@@ -8,6 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 </head>
 <body>
+	<header>
+		<div class="container">
+			<nav class="col-12">
+				
+			</nav>		
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			
+		</div>
+	</section>
+
 <script type="text/javascript" src="../assets/js/jquery.js"></script>
 <script type="text/javascript" src="../assets/js/popper.js"></script>
 <script type="text/javascript" src="../assets/js/bootstrap.js"></script>

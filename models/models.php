@@ -44,8 +44,8 @@ class InsertInformationsArtisants extends ConnectToDb
 
 				/* la requete SQL qui faire une insertion d'informations dans la table 'identities'...
 				Cependant, on prépare la requete puisqu'on attend encore des données venant de l'utilisateur*/
-			$requete = $database -> prepare('INSERT INTO identities(names, last_names, pseudo, birthday, phone1, phone2, addresses, email, passwords, id_categorie)
-				VALUES(:names, :last_name, :pseudo, :birthday, :phone1, :phone2, :addresses, :email, :password, :id_categorie)'); 
+			$requete = $database -> prepare('INSERT INTO identities(names, last_names, pseudo, birthday, phone1, phone2, addresses, email, passwords, id_categorie, dates)
+				VALUES(:names, :last_name, :pseudo, :birthday, :phone1, :phone2, sha2(:addresses, 256), :email, :password, :id_categorie, NOW())'); 
 
 			$requete -> execute($donnees);
 		}
@@ -91,12 +91,13 @@ class InsertInformationsArtisants extends ConnectToDb
 		{
 			die('Erreur:<br>'.$e -> getMessage());
 		}
+
 		$database = null;
 	}
 }
 
 
-class Files extends ConnectToDb
+class InsertFiles extends ConnectToDb
 {
 	private $defaultValue = null;
 
@@ -124,7 +125,7 @@ class Files extends ConnectToDb
 	}
 }
 
-class Messages extends ConnectToDb
+class InsertMessages extends ConnectToDb
 {
 	private $defaultValue = null;
 
@@ -147,6 +148,8 @@ class Messages extends ConnectToDb
 		{
 			die('Erreur:<br>'.$e -> getMessage());
 		}
+
+		$database =null;
 	}
 }
 
@@ -164,7 +167,7 @@ class Login extends ConnectToDb
 		try
 		{
 			$database = $this -> db_connect();
-			$reponse = $database -> prepare("SELECT id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND password = :password");
+			$reponse = $database -> prepare("SELECT id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND password = sha2(:password, 256)");
 			$reponse -> execute($donnees);
 
 			$donnee = $reponse -> fetch();
@@ -173,9 +176,101 @@ class Login extends ConnectToDb
 
 		catch(PDOException $e)
 		{
-			die('Error:<br>' . $e->getMessage());
+			die('Error:<br>'.$e -> getMessage());
 		}
+
+		$database = null;
 	}
 }
 
+// Obtenir des informations de l'artisant...
 
+class GetInformationsArtisant extends ConnectToDb
+{
+	private $defaultValue = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+	public function get_identities(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$reponse = $database -> prepare('SELECT names, last_names, pseudo, phone1, phone2, addresses, email, linkedin, facebook, work, work_description, id_categorie FROM identities WHERE id = :id');
+			$reponse -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Error:<br>'.$e -> getMessage());
+		}
+
+		$database = null;
+	}
+
+	public function get_formations(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$reponse = $database -> prepare('SELECT f.places, f.dates, f.objects, f.descriptions FROM formations f` JOIN `identities i` ON f.id_identity = i.id WHERE i.id = :id');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Error:<br>'.$e -> getMessage());
+		}
+
+		$database = null;
+	}
+}
+
+// Pour faire les mises à jours ...
+
+class UpdateIdentities extends ConnectToDb
+{
+	private $defaultValue = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+	public function update_informations(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare('UPDATE identities SET pseudo = :pseudo, phone1 = :phone1, linkedin = :linkedin, facebook = :facebook, work = :work, work_description = :work_description WHERE id = :id');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+
+		$database = null;
+	}
+
+	public function update_link_profile(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare('UPDATE identities SET profile_link = :profile_link WHERE id = :id');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+
+		$database = null;
+	}
+}
