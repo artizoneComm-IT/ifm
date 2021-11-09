@@ -152,25 +152,30 @@ class Messages extends ConnectToDb
 
 class Login extends ConnectToDb
 {
-<<<<<<< HEAD
 	private $defaultValue = null;
 
 	public function __construct($nombre)
 	{
-		$this-> defaultValue = $nombre;
+		$this -> defaultValue = $nombre;
 	}
 
 	public function get_id_artisant(array $donnees)
 	{
 		try
 		{
-			$database = $this ->db_connect();
-			$requete = $database -> prepare("SELECT id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND password = :password");
-			$requete -> execute($donnees);
+			$database = $this -> db_connect();
+			$reponse = $database -> prepare("SELECT id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND password = :password");
+			$reponse -> execute($donnees);
+
+			$donnee = $reponse -> fetch();
+			return $donnee['id'];
 		}
+
 		catch(PDOException $e)
 		{
 			die('Error:<br>' . $e->getMessage());
 		}
 	}
 }
+
+
