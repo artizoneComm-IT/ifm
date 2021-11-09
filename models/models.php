@@ -91,7 +91,47 @@ class InsertInformationsArtisants extends ConnectToDb
 		{
 			die('Erreur:<br>'.$e -> getMessage());
 		}
+		$database = null;
 	}
 }
 
-class 
+
+class Files extends ConnectToDb
+{
+	private $defaultValue = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+	public function inserer_lien_fichier(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $requete -> prepare('INSERT INTO files(links, comments, id_identity)
+				VALUES(:links, :comments, :id_identity)');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'$e -> getMessage());
+		}
+
+		$database = null;
+	}
+}
+
+class Messages extends ConnectToDb
+{
+	private $defaultValue = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+
+}
