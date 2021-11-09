@@ -152,7 +152,6 @@ class Messages extends ConnectToDb
 
 class Login extends ConnectToDb
 {
-<<<<<<< HEAD
 	private $defaultValue = null;
 
 	public function __construct($nombre)
