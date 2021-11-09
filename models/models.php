@@ -1,6 +1,6 @@
 <?php
 /* connexion à la base de données */
-class ConnectToDb()
+class ConnectToDb
 {
 	/* Il faut toujours qu'une classe possède une valeur par défaut quand on l'utilise */
 	private $defaultValue = null; // l'attribut qui est la valeur de la classe 'ConnectToDb'
@@ -27,7 +27,7 @@ class ConnectToDb()
 	}
 }
 
-class InsertInformations()
+class InsertInformationsArtisants extends ConnectToDb
 {
 	private $defaultValue = null;
 
@@ -58,7 +58,40 @@ class InsertInformations()
 		$database = null;
 	}
 
-	public function remplir
+	public function remplir_formations(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+
+			$requete = $database -> prepare('INSERT  INTO formations(places, dates, objects, descriptions, id_identity)
+				VALUES(:places, :dates, :objects, :descriptions, :id_identity)');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+
+		$database = null;
+	}
+
+	public function remplir_experiences(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare('INSERT INTO experiences(experience_name, dates, descriptions, id_identity)
+				VALUES(:experience_name, :dates, :descriptions, :id_identity)');
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+	}
 }
 
-
+class 
