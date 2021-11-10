@@ -3,24 +3,24 @@ class GetInfoLogin
 {
 	private $defaultValue = null;
 	private $identifiant = null;
-	private $passwords = null;
+	private $password = null;
 
 	public function __construct(int $nombre)
 	{
 		$this -> defaultValue = $nombre;
 	}
 
-	public function setinfo(string $identifiant, string $passwords)
+	public function setinfo(string $identifiant, string $password)
 	{
 		$this -> identifiant = strip_tags(trim($identifiant));
-		$this -> passwords = strip_tags($passwords);
+		$this -> password = strip_tags($password);
 	}
 
 	public function getInfo()
 	{
 		$infos = array(
-			'identifiant' = > $this -> identifiant,
-			'passwords' => $this -> passwords);
+			'identifiant' => $this -> identifiant,
+			'password' => $this -> password);
 		return $infos;
 	}
 }

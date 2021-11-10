@@ -9,10 +9,10 @@ $informations -> setinfo($_POST['identifiant'], $_POST['password']);
 $donnees = $informations -> getinfo();
 
 $reponse = $verification -> get_id_artisant($donnees);
-if(!empty($reponse))
+if(!empty($reponse['TRUE']) AND !empty($reponse['id']))
 {	
-	$_SESSION['id'] = $reponse;
-	echo $reponse;
+	$_SESSION['id'] = $reponse['id'];
+	echo $reponse['TRUE'];
 }
 
 else

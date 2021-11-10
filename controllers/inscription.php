@@ -9,9 +9,7 @@ if(!empty($_POST['names']) AND !empty($_POST['last_names']) AND !empty($_POST['p
 {
     $informations -> setinfo($_POST['names'], $_POST['last_names'], $_POST['pseudo'], $_POST['birthday'], $_POST['phone1'], $_POST['phone2'], $_POST['addresses'], $_POST['email'], $_POST['passwords'], $_POST['id_categorie']);
 
-    $donnees = $informations -> getInfo();
-
-    $inserer -> remplir_identities($donnees);
+    $inserer -> remplir_identities($informations -> getInfo());
 }
 
 else 

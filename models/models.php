@@ -118,7 +118,7 @@ class InsertFiles extends ConnectToDb
 
 		catch(PDOException $e)
 		{
-			die('Erreur:<br>'$e -> getMessage());
+			die('Erreur:<br>'.$e -> getMessage());
 		}
 
 		$database = null;
@@ -157,26 +157,26 @@ class Login extends ConnectToDb
 {
 	private $defaultValue = null;
 
-	public function __construct($nombre)
+	public function __construct(int $nombre)
 	{
 		$this -> defaultValue = $nombre;
 	}
 
-	public function get_id_artisant(array $donnees)
+	public function get_id_artisant(array $infos)
 	{
 		try
 		{
 			$database = $this -> db_connect();
-			$reponse = $database -> prepare("SELECT id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND password = sha2(:password, 256)");
-			$reponse -> execute($donnees);
+			$reponse = $database -> prepare("SELECT True, id FROM identities WHERE (email = :identifiant OR phone1 = :identifiant OR phone2 = :identifiant) AND passwords = sha2(:password, 256)");
+			$reponse -> execute($infos);
 
-			$donnee = $reponse -> fetch();
-			return $donnee['id'];
+			$donnees = $reponse -> fetch();
+			return $donnees;
 		}
 
 		catch(PDOException $e)
 		{
-			die('Error:<br>'.$e -> getMessage());
+			die('Error: login <br>'.$e -> getMessage());
 		}
 
 		$database = null;
@@ -274,3 +274,44 @@ class UpdateIdentities extends ConnectToDb
 		$database = null;
 	}
 }
+
+class ChangePassword extends ConnectToDb
+{
+	private $defaultValue = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+	public function update_forgot_password(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare("UPDATE identities SET passwords = sha2('mybestfreinds', 256) WHERE id = :id");
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die("Erreur:<br>".$e -> getMessage());
+		}
+	}
+
+	public function change_password(array $donnees)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare("UPDATE identities SET passwords = sha2(:password, 256) WHERE id = :id");
+			$requete -> execute($donnees);
+		}
+
+		catch(PDOException $e)
+		{
+			die('Erreur: <br>'.$e -> getMessage());
+		}
+	}
+}
+
