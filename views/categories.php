@@ -15,11 +15,11 @@
           Veuillez séléctionner votre catégorie s'il vous plait!
         </p>
     </div>
-    <div class="container" style="margin-top: 65px;">
+    <div class="container" style="margin-top: 65px; margin-bottom:60px;">
         <div class="row" >
             <div class="card" style="width: 15rem; margin-right: 50px; margin-left: 150px; box-shadow:0 0 0.5em #888888;">
                 <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/4.jpg" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Peinture/Hosodoko</h5>
@@ -29,7 +29,7 @@
           </div>
             <div class="card" style="width: 15rem; margin-right: 50px; box-shadow:0 0 0.5em #888888;">
                 <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/ob_1f2191_12143240-965162930197324-7369221662011.jpg" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Dessin/Sary</h5>
@@ -37,7 +37,7 @@
             </div>
             <div class="card" style="width: 15rem; box-shadow:0 0 0.5em #888888;">
                 <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/60948626.jpg" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Sculpture/Sary sikotra</h5>
@@ -47,7 +47,7 @@
         <div class="row" style="margin-top: 25px;">
               <div class="card" style="width: 15rem; margin-right: 50px; margin-left: 150px; box-shadow:0 0 0.5em #888888;">
                   <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
@@ -55,7 +55,7 @@
             </div>
               <div class="card" style="width: 15rem; margin-right: 50px; box-shadow:0 0 0.5em #888888;">
                   <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia1.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
@@ -63,7 +63,7 @@
             </div>
               <div class="card" style="width: 15rem; box-shadow:0 0 0.5em #888888;">
                   <a href="seConnecter.php">
-                    <img src="nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/inde.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Tissage/Tenona</h5>
