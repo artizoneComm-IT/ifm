@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo.ico" type="image/x-icon">
+
     <title>ArtiZone</title>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/938e38e4e6.js" crossorigin="anonymous"></script>    
