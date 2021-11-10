@@ -1,16 +1,24 @@
+body {
+    background-image: url("../image/bg/baobab.jpg");
+}
+.accueil {
+    color: black;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+.accueil:hover {
+    font-weight: bold;
+}
+
 .couleur_header
 {
-    background-color: rgba(38, 118, 119, 1.0);
+    background-color: transparent;
+}
+.couleur_footer{
+    background-color: transparent;
 }
 
-.nom_iteams
-{
-    font-family: 'Z003';
-    color: white;
-    font-size: 1.7em;
-}
-
-.logo_iteams
+.logo_ArtiZone
 {
     border-radius: 13px;
     border: 1px inset white;

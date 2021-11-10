@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/css/index.css">    
 
 </head>
-<body>
-<?php include_once('../includes/header.php'); ?>
+<body style="background-image: url('../assets/image/bg/pinceaux.jpg')">
+<?php include_once('includes/header.php'); ?>
     <section>
     <form method="post">
         <div class="container mt-2" id="membre">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 ml-md-4">
+                <!-- <div class="col-12 col-md-5 ml-md-4">
                     <br><br><br><br><br><br><br>
                     <p class="font-weight-bold text-center">Poste:</p>
                     <div class="row form-group border rounded instruction">
@@ -227,7 +227,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <br>
@@ -329,7 +329,6 @@
     </section>
     <br>
     <br>
-    <?php include_once('../includes/footer.php'); ?>
         <script type="text/javascript" src="../assets/js/jquery.js"></script>
         <script type="text/javascript" src="../assets/js/popper.js"></script>
         <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
