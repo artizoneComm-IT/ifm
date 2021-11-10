@@ -15,7 +15,7 @@
           Veuillez séléctionner votre catégorie s'il vous plait!
         </p>
     </div>
-    <div class="container" style="margin-top: 65px; margin-bottom:60px;">
+    <div class="container" style="margin-top: 15px;">
         <div class="row" >
             <div class="card" style="width: 15rem; margin-right: 50px; margin-left: 150px; box-shadow:0 0 0.5em #888888;">
                 <a href="seConnecter.php">
@@ -47,7 +47,7 @@
         <div class="row" style="margin-top: 25px;">
               <div class="card" style="width: 15rem; margin-right: 50px; margin-left: 150px; box-shadow:0 0 0.5em #888888;">
                   <a href="seConnecter.php">
-                    <img src="../assets/image/bg/raphia.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia1.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
@@ -55,7 +55,7 @@
             </div>
               <div class="card" style="width: 15rem; margin-right: 50px; box-shadow:0 0 0.5em #888888;">
                   <a href="seConnecter.php">
-                    <img src="../assets/image/bg/raphia1.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
