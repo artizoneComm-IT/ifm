@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo.ico" type="image/x-icon">
+
     <title>ArtiZone</title>
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    
+    <script src="https://kit.fontawesome.com/938e38e4e6.js" crossorigin="anonymous"></script>    
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -37,8 +40,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" style=color><i class="fas fa-home-alt " style="color:white"></i>Accueil</a></li>
-                        <li><a href="#"><i class="fas fa-pencil-paintbrush"></i>Artisans</a></li>
+                        <li><a href="#" >Accueil</a></li>
+                        <li><a href="#">Artisans</a></li>
                         <li><a href="#">Gallerie</a></li>
                         <li><a href="#">Catégories</a></li>
                         <li><a href="#" class="connect" style="font-weight:bold; color:#15f733">Se connecter</a></li>

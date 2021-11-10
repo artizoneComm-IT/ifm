@@ -1,4 +1,58 @@
-.entete
+body {
+    background-image: url("../image/bg/baobab.jpg");
+}
+.accueil {
+    color: black;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+.accueil:hover {
+    font-weight: bold;
+}
+
+.couleur_header
 {
     background-color: transparent;
+}
+.couleur_footer{
+    background-color: transparent;
+}
+
+.logo_ArtiZone
+{
+    border-radius: 13px;
+    border: 1px inset white;
+}
+
+p
+{
+    color: rgba(38, 118, 119, 1.0);
+    font-size: 1.3em;
+    text-decoration: underline;
+    font-family: 'Z003';
+}
+
+#ajoutIcone
+{
+    border-radius: 10px;
+}
+
+.passer
+{
+    background-color: rgba(38, 118, 119, 1.0);
+}
+
+.logo_index
+{
+    font-family: 'Z003';
+    text-decoration: none;
+    font-size: 1.9em;
+}
+
+.instruction
+{
+    font-family: 'Z003';
+    font-size: larger;
+    background-color: rgba(38, 118, 119, 1.0);
+    color: white;
 }
