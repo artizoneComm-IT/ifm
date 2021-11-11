@@ -14,7 +14,7 @@
     <div class="couleur_header">
         <div class="container-fluid">
             <div class="row">
-                <nav class="col navbar navbar-expand-md navbar-dark">
+                <nav class="col navbar navbar-expand-md navbar-dark" >
                     <a href="#" class="navbar-brand">
                         <img class="logo_ArtiZone shadow" src="../assets/image/logo/logo1.png" alt="ArtiZone'logo" width="120" height="70">
                     </a>
