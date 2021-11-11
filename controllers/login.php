@@ -14,8 +14,10 @@ if(!empty($reponse['TRUE']) AND !empty($reponse['id']))
 	$_SESSION['id'] = $reponse['id'];
 	echo $reponse['TRUE'];
 }
-
 else
 {
 	echo 'Identifiant et/ou mot de passe incorrect...! Veuillez réessayer !';
 }
+unset($verification);
+unset($informations);
+?>

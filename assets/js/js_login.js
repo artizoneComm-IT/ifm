@@ -1,7 +1,9 @@
 $(document).ready(function()
 	{
 		$('#erreur').hide();
+		$('#loading').hide();
 
+		// Connecter ...
 		$('#connecter').click(function()
 			{
 				if($('#identifiant').val().trim().length === 0)
@@ -45,5 +47,36 @@ $(document).ready(function()
 		$('#forgot_password').click(function()
 			{
 				window.location.href = 'erreurs/forgot_password.php';
+			});
+
+		$('#send_mail').click(function()
+			{
+				if($('#email').val().trim().length === 0)
+				{
+					alert('Veuillez saisir votre adresse email...! Merci !');
+				}
+
+				else
+				{
+					$('#envoyer').hide();
+					$('#loading').show();
+
+					$.post('../../controllers/erreurs/forgot_password.php', {email: $('#email').val()}, function(data)
+						{
+							if(data == 'success')
+							{
+								alert('Veuillez regarder votre email pour la mise à jours de votre mot de passe...!');
+								window.location.replace('../login.php');
+							}
+
+							else
+							{
+								alert(data);
+								$('#loading').hide();
+								$('#envoyer').show();
+
+							}
+						});
+				}
 			});
 	});

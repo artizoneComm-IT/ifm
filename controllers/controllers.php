@@ -1,4 +1,66 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+// La class suivante est utilisée pour les envoies des emails...
+class SendEmail
+{
+	private $defaultValue = null;
+	private $email_destinataire = null;
+	private $destinataire = null;
+	private $objet = null;
+	private $message = null;
+
+	private  function __construct()
+	{
+		$this -> defaultValue = "mybestfriends";
+	}
+
+	protected function set_data(string $email_destinataire, string $destinataire, string $objet, string $message)
+	{
+		$this -> email_destinataire = strip_tags($email_destinataire);
+		$this -> destinataire =  strip_tags(ucwords($destinataire));
+		$this -> objet = strip_tags(trim($objet));
+		$this -> message = $message;
+	}
+
+	protected function send_email()
+	{
+		$email = new PHPMailer(true);
+
+		try
+		{
+			$email -> SMTPDebug = 0;
+			$email -> isSMTP();
+			$email -> Host = 'smtp.gmail.com';
+			$email -> SMTPAuth =  true;
+			$email -> Username = 'lahatrap20.aps2a@gmail.com';
+			$email -> Password = '299792458m/S/tsiory';
+			$email -> SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+			$email -> Port = 587;
+
+			$email -> setFrom('lahatrap20.aps2a@gmail.com', 'Artizone');
+			$email -> addAddress($this -> email_destinataire, $this -> destinataire);
+			
+			$email -> isHTML(true);
+			$email -> Subject = $this -> objet;
+			$email -> Body = $this -> message; 
+			$email -> AltBody = $this -> message;
+
+			$email -> send();
+			return 'success';
+		}
+
+		catch(Exception $e)
+		{
+			die('Erreur:<br>'.$e -> getMessage());
+		}
+	}
+}
+
+
 class GetInfoLogin
 {
 	private $defaultValue = null;
@@ -127,5 +189,44 @@ class GetInfoFiles
 			'comments' => $this -> comments,
 			'id_identity' => $this -> id_identity);
 		return $infos;
+	}
+}
+
+// Mot de passe oublier...
+
+class ForgotPassword extends SendEmail
+{
+	private $defaultValue = null;
+	private $email = null;
+	private $nom = null;
+
+	public function __construct(int $nombre)
+	{
+		$this-> defaultValue = $nombre;
+	}
+
+	public function set_email_account(string $email)
+	{
+		$this -> email = strip_tags($email);
+	}
+
+	public function get_email_account()
+	{
+		$infos = array(
+			'email' => $this -> email);
+		return $infos;
+	}
+
+	// Mot de passe ... 
+	public function set_name(string $nom)
+	{
+		$this -> nom = strip_tags($nom);
+	}
+
+	public function send_password_forgotten()
+	{
+		$messages = '<h3>Salutation !</h3>Le mot de passe de votre compte Artizone:<br><b><i>mybestfriends</i></b><br>Merci de votre confiance !';
+		SendEmail::set_data($this -> email, $this -> nom, 'Le nouveau mot de passe', $messages);
+		SendEmail::send_email();
 	}
 }

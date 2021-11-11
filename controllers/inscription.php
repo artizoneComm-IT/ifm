@@ -16,3 +16,6 @@ else
 {
     echo "Veuillez remplir toutes les champs ...!";  
 }
+unset($inserer);
+unset($informations);
+?>

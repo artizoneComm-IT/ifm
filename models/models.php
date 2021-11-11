@@ -216,7 +216,7 @@ class GetInformationsArtisant extends ConnectToDb
 		try
 		{
 			$database = $this -> db_connect();
-			$reponse = $database -> prepare('SELECT f.places, f.dates, f.objects, f.descriptions FROM formations f` JOIN `identities i` ON f.id_identity = i.id WHERE i.id = :id');
+			$reponse = $database -> prepare('SELECT f.places, f.dates, f.objects, f.descriptions FROM formations f JOIN identities i ON f.id_identity = i.id WHERE i.id = :id');
 			$requete -> execute($donnees);
 		}
 
@@ -227,6 +227,8 @@ class GetInformationsArtisant extends ConnectToDb
 
 		$database = null;
 	}
+
+
 }
 
 // Pour faire les mises à jours ...
@@ -275,6 +277,8 @@ class UpdateIdentities extends ConnectToDb
 	}
 }
 
+
+/* Pour tous tous changements de mot de passe ... */
 class ChangePassword extends ConnectToDb
 {
 	private $defaultValue = null;
@@ -284,21 +288,47 @@ class ChangePassword extends ConnectToDb
 		$this -> defaultValue = $nombre;
 	}
 
-	public function update_forgot_password(array $donnees)
+	// Vérifier l'adresse email s'il existe ...
+	public function verify_email(array $infos)
 	{
 		try
 		{
 			$database = $this -> db_connect();
-			$requete = $database -> prepare("UPDATE identities SET passwords = sha2('mybestfreinds', 256) WHERE id = :id");
-			$requete -> execute($donnees);
+			$reponse = $database -> prepare('SELECT True, id, names FROM identities WHERE email = :email');
+			$reponse -> execute($infos);
+
+			$donnees = $reponse -> fetch();
+			return $donnees;
 		}
 
 		catch(PDOException $e)
 		{
 			die("Erreur:<br>".$e -> getMessage());
 		}
+
+		$database = null;
 	}
 
+	// Mettre à jour le mot de passe oublié ...
+	public function update_forgot_password(int $id)
+	{
+		try
+		{
+			$database = $this -> db_connect();
+			$requete = $database -> prepare("UPDATE identities SET passwords = sha2('mybestfriends', 256) WHERE id = :id");
+			$requete -> execute(array(
+				'id' => $id));
+		}
+
+		catch(PDOException $e)
+		{
+			die("Erreur:<br>".$e -> getMessage());
+		}
+
+		$database = null;
+	}
+
+	// Changer le mot de passe...
 	public function change_password(array $donnees)
 	{
 		try
@@ -312,6 +342,8 @@ class ChangePassword extends ConnectToDb
 		{
 			die('Erreur: <br>'.$e -> getMessage());
 		}
+
+		$database = null;
 	}
 }
 

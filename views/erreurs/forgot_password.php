@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Artizone-Forgot password</title>
 	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/loading.css">
 </head>
 <body>
 	<header>
@@ -19,7 +20,7 @@
 	</header>
 	<section>
 		<div class="container">
-			<div class="row">
+			<div class="row form-group">
 				<div class="col-12 col-md-3"></div>
 				<div class="col-12 col-md-6  border shadow rounded p-3">
 					<p class="text-warning">Pour la récupération de votre mot de passe, veuillez bien saisir votre email. <br>
@@ -31,8 +32,11 @@
 
 					<div class="container mt-3">
 						<div class="row">
-							<div class="col-12 text-center">
+							<div class="col-12 text-center" id="envoyer">
 								<button class="btn btn-success" id="send_mail">Envoyer</button>
+							</div>
+							<div class="col-12 text-center" id="loading">
+								<span class="ld ld-hourglass ld-spin-fast" style="font-size:64px;color:#8da"></span>
 							</div>
 						</div>
 					</div>
@@ -41,5 +45,9 @@
 			</div>
 		</div>
 	</section>
+<script type="text/javascript" src="../../assets/js/jquery.js"></script>
+<script type="text/javascript" src="../../assets/js/popper.js"></script>
+<script type="text/javascript" src="../../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../../assets/js/js_login.js"></script>
 </body>
 </html>
