@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">    
+    <link rel="stylesheet" href="../assets/css/info-inscription.css">    
 
 </head>
-<body style="background-image: url('../assets/image/bg/pinceaux.jpg')">
+<div style="background-image: url('../assets/image/bg/pinceaux.jpg')">
 <?php include_once('includes/header.php'); ?>
     <section>
     <form method="post">
-        <div class="container mt-2" id="membre">
+        <div class="container mt-2" id="membre" style="background-color:rgba(43, 255, 6, 0.116)">
         <p class="font-weight-bold">Votre identité</p>
             <div class="row form-group">
 
@@ -35,30 +35,30 @@
                     <input type="text" id="prenomUsuel"
                         placeholder="Prenom usuel" class="form-control" required><br> -->
 
-                    <img src="../assets/images/inscription/telephone.png" width="30" height="30">
+                    <img src="../assets/image/inscription/telephone.png" width="20" height="20">
                     <label for="telephonePrimo"><b>Téléphones</b>:</label>
                     <input type="tel" id="telephonePrimo"
                         placeholder="Téléphone1... (obligatoire)" class="form-control" required><br>
                     <input type="tel" id="telephoneSecondo"
                         placeholder="Téléphone2" class="form-control"><br>
 
-                    <img src="../assets/images/inscription/domicile.png" width="30" height="30">
+                    <img src="../assets/image/inscription/domicile.png" width="20" height="20">
                     <label for="domicile"><b>Adresse artisanale ou domicile:</b></label>
                     <input type="text" id="domicile"
                         placeholder="Où habitez-vous ?" class="form-control"><br>
                 </div>
 
                 <div class="col-lg-4 col-12 rounded border shadow pt-1 pb-1">
-                    <img src="../assets/images/inscription/gmail.png" width="30" height="30">
+                    <img src="../assets/image/inscription/gmail.png" width="20" height="20">
                     <label for="email"><b>Adresse email:</b></label>
                     <input type="email" id="email" 
                         placeholder="Email (obligatoire)" class="form-control" required><br>
 
-                    <img src="../assets/images/inscription/cv.png" width="30" height="30">
+                    <img src="../assets/image/inscription/cv.png" width="20" height="20">
 
                     <label for="fonction"><b>Métier:</b></label><br>
                     <input type="text" id="fonction" 
-                        placeholder="Votre travail et/ou étude (..., ...... ,...)" class="form-control"><br>
+                        placeholder="Votre travail et/ou étude " class="form-control"><br>
 
                     <label for="descriptionTravail"><b>Description:</b></label><br>
                     <textarea id="descriptionTravail" rows="7" 
@@ -66,24 +66,28 @@
                 </div>
                 
                 <div class="col-lg-4 col-12 rounded border pt-1 pb-1 mt-1 mb-1 ">
-                    <img src="../assets/images/inscription/linkedin.png" width="30" height="30">
+                    <img src="../assets/image/inscription/linkedin.png" width="20" height="20">
                     <label for="lien_linkedin"><b>Lien du profil Linkedin:</b></label>
                     <input type="url" id="lien_linkedin" 
                         placeholder="Si vous en avez  " class="form-control"><br>
                     
 
-                    <img src="../assets/images/inscription/facebook.png" width="30" height="30">
+                    <img src="../assets/image/inscription/facebook.png" width="20" height="20">
                     <label for="lien_facebook"><b>Lien du profil Facebook:</b></label>
                     <input type="url" id="lien_facebook" 
-                        placeholder="... (obligatoire)" class="form-control"><br>
+                        placeholder="... " class="form-control"><br>
 
-                    <div class="container mt-5 text-center" id="bouttonMembre">
+                    <div class="bouton">
+                        <button type="button" class="btn btn-success"> Suivant </button>
+                    </div>
+
+                    <!-- <div class="container mt-5 text-center" id="bouttonMembre">
                         <div class="row">
                             <div class="col">
                                 <button type="button" class="btn btn-success"> Suivant </button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -91,7 +95,7 @@
 
         <!--------------------------------------------------formation---------------------------------------------------------->
 
-        <div class="container mt-2" id="formation">
+        <div class="container mt-2" id="formation" style="background-color:rgba(43, 255, 6, 0.116)">
         <p class="font-weight-bold">Vos/votre Formation(s):</p>
             <div class="row form-group rounded border-lg shadow text-center">
                 <div class="col-12 col-md-4 pb-1 m-md-3 m-1 ml-md-5 rounded border">
@@ -120,8 +124,8 @@
 
                             <div class="col-4 ajouter">
                                 <button type="button" class="btn btn-secondary">
-                                <img src="../assets/images/addButton.jpg" id="ajoutIcone" 
-                                width="30" height="25" alt="ajouter" title="Plus d'informations"></button>
+                                <img src="../assets/image/addButton.jpg" id="ajoutIcone" 
+                                width="20" height="20" alt="ajouter" title="Plus d'informations"></button>
                             </div>
 
                             <div class="col-4 suivant">
@@ -135,34 +139,34 @@
 
         <!--------------------------------------------------------- Compétence ----------------------------------------------------------->
 
-        <div class="container mt-md-1 mt-1" id="competence">
+        <div class="container mt-md-1 mt-1" id="competence" style="background-color:rgba(43, 255, 6, 0.116)">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <p class="font-weight-bold text-center">Vos Compétences:</p>
                     <div class="row text-center border shadow p-2 rounded">
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Mobile</span><br>
-                            <img src="../assets/images/inscription/mobile.png" width="50" height="50" alt="mobile">
+                            <img src="../assets/image/inscription/mobile.png" width="30" height="30" alt="mobile">
                         </div>
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Laptop</span><br>
-                            <img src="../assets/images/inscription/laptop.png" width="50" height="50" alt="laptop">
+                            <img src="../assets/image/inscription/laptop.png" width="30" height="30" alt="laptop">
                         </div>
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Stylo</span><br>
-                            <img src="../assets/images/inscription/stylo.png" width="50" height="50" alt="stylo">
+                            <img src="../assets/image/inscription/stylo.png" width="30" height="30" alt="stylo">
                         </div>
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Layers</span><br>
-                            <img src="../assets/images/inscription/layers.png" width="50" height="50" alt="layers">
+                            <img src="../assets/image/inscription/layers.png" width="30" height="30" alt="layers">
                         </div>
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Shield</span><br>
-                            <img src="../assets/images/inscription/shield.png" width="50" height="50" alt="shield">
+                            <img src="../assets/image/inscription/shield.png" width="30" height="30" alt="shield">
                         </div>
                         <div class="col-md-2 col-4">
                             <span class="font-weight-bold">Paramètre</span><br>
-                            <img src="../assets/images/inscription/parametre.png" width="50" height="50" alt="paramètre">
+                            <img src="../assets/image/inscription/parametre.png" width="30" height="30" alt="paramètre">
                         </div>
                     </div>
                     <br>
@@ -191,8 +195,8 @@
                                         </div>
                                         <div class="col-4 ajouter">
                                             <button type="button" class="btn btn-secondary">
-                                            <img src="../assets/images/inscription/addButton.jpg" id="ajoutIcone" 
-                                            width="30" height="25" alt="ajouter" title="Plus d'informations"></button>
+                                            <img src="../assets/image/inscription/addButton.jpg" id="ajoutIcone" 
+                                            width="20" height="20" alt="ajouter" title="Plus d'informations"></button>
                                         </div>
                                         <div class="col-4 suivant">
                                             <button type="button" class="btn btn-success"><span title="suivant"> >>> </span></button>
@@ -234,7 +238,7 @@
 
         <!------------------------------------------ experience --------------------------------------> 
 
-        <div class="container mt-2" id="experience">
+        <div class="container mt-2" id="experience" style="background-color:rgba(43, 255, 6, 0.116)">
             <p class="font-weight-bold">Expériences:</p>
             <div class="row form-group row text-center shadow rounded mb-3 p-1">
                 <div class="col-12 col-md-4 pb-1 m-md-3 m-1 ml-md-5 rounded border">
@@ -262,8 +266,8 @@
                             </div>
                             <div class="col-md-4 col-3 ajouter">
                                 <button type="button" class="btn btn-secondary">
-                                <img src="../assets/images/inscription/addButton.jpg" id="ajoutIcone" 
-                                width="30" height="25" alt="ajouter" title="Plus d'informations"></button>
+                                <img src="../assets/image/inscription/addButton.jpg" id="ajoutIcone" 
+                                width="20" height="20" alt="ajouter" title="Plus d'informations"></button>
                             </div>
                             <div class="col-md-4 col-3 suivant">
                                 <button type="button" class="btn btn-success"> >>> </button>
@@ -276,7 +280,7 @@
 
         <!---------------------------------- Distinctions ------------------------------------->
 
-        <div class="container mt-2" id="distinction">
+        <div class="container mt-2" id="distinction" style="background-color:rgba(43, 255, 6, 0.116)">
         <p class="font-weight-bold">Évènements distinctifs:</p>
             <div class="row form-group row text-center shadow rounded mb-3 p-1">
                 <div class="col-12 col-md-4 pb-1 m-md-3 m-1 ml-md-5 rounded border">
@@ -308,8 +312,8 @@
                             </div>
                             <div class="col-md-4 col-3 ajouter">
                                 <button type="button" class="btn btn-secondary">
-                                <img src="../assets/images/inscription/addButton.jpg" id="ajoutIcone" 
-                                width="30" height="25" alt="ajouter" title="Plus d'informations"></button>
+                                <img src="../assets/image/inscription/addButton.jpg" id="ajoutIcone" 
+                                width="20" height="20" alt="ajouter" title="Plus d'informations"></button>
                             </div>
                             <div class="col-md-4 col-3 suivant">
                                 <button type="button" class="btn btn-success"> >>> </button>
@@ -334,6 +338,7 @@
         <script type="text/javascript" src="../assets/js/popper.js"></script>
         <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../assets/js/js_inscription.js"></script>
+</div>
 </body>
 </html>
 
