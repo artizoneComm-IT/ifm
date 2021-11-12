@@ -15,26 +15,46 @@
 <body>
     <div class="container-fluid ">
       <div class="row">
-        <nav class="col navbar navbar-expand-lg " style="background-color:rgba(23, 87, 124, 0.315)">
-          <a class="navbar-brand" href="#" style="color:white">
-            <img src="../assets/image/logo/logobg.png" width="120" height="70" alt="Artizone's logo">
-            ArtiZone
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarContent" class="collapse navbar-collapse" >
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+     <div class="container">
+     <img class="logo_ArtiZone shadow" src="../assets/image/logo/logobg.png" alt="ArtiZone'logo" width="120" height="70">         <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-target="navbarNav"
+            data-bs-toggler="collapse"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-lable="Toggle Navbar"
+         >
+             <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarNav">
+             <div class="mx-auto"></div>
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="color:white;border-bottom:1px white; font-height:15px">Retour à l'accueil</a>
-              </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"> <span style="color:green; font-size:15px; font-weight:bold">Accueil</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white" ><span style="color:green; font-size:15px; font-weight:bold">Gallerie</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Catégories</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Artisans</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Se connecter</span></a>
+                </li>
             </ul>
-          </div>
-        </nav>
+         </div>
+     </div>   
+    </nav>
       </div>
     </div>
-    <div class="container" style="margin-top:2%" >
-        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">
+    <div class="container my-5 d-grid gap-5"  >
+        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;margin-top:50px">
           Veuiller faire le choix de votre catégorie
         </p>
         <div class="row " >
@@ -107,6 +127,17 @@
           </div>
         </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
       </div>
-    
+      <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function(){
+            if (window.pageYOffset > 100){
+                nav.classList.add('bg-dark', 'shadow');
+            }else {
+                nav.classList.remove('bg-dark', 'shadow')
+            }
+        })
+    </script>    
 </body>
 </html>
