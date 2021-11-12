@@ -40,7 +40,7 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                      <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                      <img src="../assets/image/art/4.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Peinture/Hoso-doko</h5>
@@ -52,7 +52,7 @@
           <div class="w-27 col-12 col-lg-4">
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
                 <a href="#">
-                    <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/Malgache-Nouvelle-génération.jpg" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Dessin/Sary</h5>
@@ -62,7 +62,7 @@
           <div class="w-27 col-12 col-lg-4">
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                 <a href="#">
-                    <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/60948626.jpg" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Sculpture/Sary sikotra</h5>
@@ -72,7 +72,7 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia1.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
@@ -82,7 +82,7 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/raphia.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
@@ -92,7 +92,7 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/bg/nazirah.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/art/inde.jpg" class="card-img-top" alt="...">
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Tissage/Tenona</h5>
