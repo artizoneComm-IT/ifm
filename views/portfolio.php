@@ -116,6 +116,120 @@
         </div>
     </div>
     
+
+    <div class="container" style="margin-top:10%" >
+        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">
+          OEUVRES - ASA TANANA
+        </p>
+        <div class="row " >
+          <div class="w-27 col-12 col-lg-4">
+              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                  <a href="#">
+                      <img src="../assets/image/art/1.png" class="card-img-top" alt="...">
+
+                  </a>
+                  <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+              </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4">
+            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
+                <a href="#">
+                    <img src="../assets/image/art/11.jpg" class="card-img-top" alt="...">
+
+                </a>
+                <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY ROFIA</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">18 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+            </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4">
+            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                <a href="#">
+                    <img src="../assets/image/art/1.jpg" class="card-img-top" alt="...">
+
+                </a>
+                <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">POKETRA</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">17 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+            </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
+              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                  <a href="#">
+                    <img src="../assets/image/art/6.jpg" class="card-img-top" alt="...">
+
+                  </a>
+                  <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">SANDRIFY</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">8 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+              </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
+              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                  <a href="#">
+                    <img src="../assets/image/art/5.jpg" class="card-img-top" alt="...">
+
+                  </a>
+                  <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">TSIHY</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">20 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+              </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
+              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                  <a href="#">
+                    <img src="../assets/image/art/10.jpg" class="card-img-top" alt="...">
+                 </a>
+                 <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+              </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
+              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
+                  <a href="#">
+                      <img src="../assets/image/art/s1.jpg" class="card-img-top" alt="...">
+
+                  </a>
+                  <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: green">SEZA KELY</h3> <br>
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+              </div>
+          </div>
+          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
+            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
+                <a href="#">
+                    <img src="../assets/image/art/s2.jpg" class="card-img-top" alt="...">
+
+                </a>
+                <div class="card-body">
+                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">VATA KELY</h3>  <br>           
+                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">18 000 Ar</span></h5>
+                    <a href="#" class="btn btn-warning" >Acheter</a>
+                </div>
+          </div>
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
+      </div>
+    
+
+
+
     <div class="container" style="margin-top:100px">
         <div class="content text-left">
             <div class="contact">

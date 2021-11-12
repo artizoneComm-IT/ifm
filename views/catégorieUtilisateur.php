@@ -17,7 +17,7 @@
       <div class="row">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
      <div class="container">
-     <img class="logo_ArtiZone shadow" src="../assets/image/logo/logobg.png" alt="ArtiZone'logo" width="120" height="70">         <button
+      <img class="logo_ArtiZone shadow" src="../assets/image/logo/logobg.png" alt="ArtiZone'logo" width="120" height="70">         <button
             type="button"
             class="navbar-toggler"
             data-bs-target="navbarNav"
@@ -33,19 +33,19 @@
              <div class="mx-auto"></div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"> <span style="color:white; font-size:20px; font-weight:bold">Accueil</span> </a>
+                    <a href="#" class="nav-link text-white"> <span class="a" style="color:rgb(17, 73, 25); font-size:25px; font-weight:bold">Accueil</span> </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white" ><span style="color:white; font-size:20px; font-weight:bold">Gallerie</span></a>
+                    <a href="#" class="nav-link text-white" ><span class="a" style="color:rgb(17, 73, 25); font-size:25px; font-weight:bold">Gallerie</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Catégories</span></a>
+                    <a href="#" class="nav-link text-white"><span class="a" style="color:rgb(17, 73, 25); font-size:25px; font-weight:bold">Catégories</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Artisans</span></a>
+                    <a href="#" class="nav-link text-white"><span class="a" style="color:rgb(17, 73, 25); font-size:25px; font-weight:bold">Artisans</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Se connecter</span></a>
+                    <a href="#" class="nav-link text-white"><span class="a" style="color:rgb(17, 73, 25); font-size:25px; font-weight:bold">Se connecter</span></a>
                 </li>
             </ul>
          </div>
@@ -54,8 +54,8 @@
       </div>
     </div>
     <div class="container my-5 d-grid gap-5"  >
-        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;margin-top:50px">
-          Veuiller faire le choix de votre catégorie
+        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;margin-top:50px; color: black">
+          Tout les catégories d'art sont ici!
         </p>
         <div class="row " >
           <div class="w-27 col-12 col-lg-4">
@@ -65,7 +65,7 @@
 
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align:center;">Peinture/Hoso-doko</h5>
+                    <h5 class="card-title" style="text-align:center; font-weight:bold">Peinture/Hoso-doko</h5>
                       
                       <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                   </div>
@@ -78,7 +78,7 @@
 
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align:center;">Dessin/Sary</h5>
+                  <h5 class="card-title" style="text-align:center; font-weight:bold">Dessin/Sary</h5>
                 </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
 
                 </a>
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align:center;">Sculpture/Sary sikotra</h5>
+                  <h5 class="card-title" style="text-align:center; font-weight:bold">Sculpture/Sary sikotra</h5>
                 </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
 
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
+                    <h5 class="card-title" style="text-align:center;font-weight:bold">Vannerie/Rary</h5>
                   </div>
               </div>
           </div>
@@ -111,7 +111,7 @@
 
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
+                    <h5 class="card-title" style="text-align:center;font-weight:bold">Coutûre/Zaitra</h5>
                   </div>
               </div>
           </div>
@@ -121,7 +121,7 @@
                     <img src="../assets/image/bg/tissage.jpg" class="card-img-top" alt="...">
                  </a>
                   <div class="card-body">
-                    <h5 class="card-title" style="text-align:center;">Tissage/Tenona</h5>
+                    <h5 class="card-title" style="text-align:center;font-weight:bold">Tissage/Tenona</h5>
                   </div>
               </div>
           </div>
