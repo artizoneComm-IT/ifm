@@ -42,6 +42,7 @@
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
                       <img src="../assets/image/bg/paintcat.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Peinture/Hoso-doko</h5>
@@ -54,6 +55,7 @@
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
                 <a href="#">
                     <img src="../assets/image/bg/dessin.jpg" class="card-img-top" alt="...">
+
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Dessin/Sary</h5>
@@ -64,6 +66,7 @@
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                 <a href="#">
                     <img src="../assets/image/bg/sculpture.jpg" class="card-img-top" alt="...">
+
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Sculpture/Sary sikotra</h5>
@@ -74,6 +77,7 @@
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
                     <img src="../assets/image/bg/vannerie.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
@@ -84,6 +88,7 @@
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
                     <img src="../assets/image/bg/couture.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
@@ -94,7 +99,7 @@
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
                     <img src="../assets/image/bg/tissage.jpg" class="card-img-top" alt="...">
-                  </a>
+                 </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Tissage/Tenona</h5>
                   </div>
