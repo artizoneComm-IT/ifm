@@ -16,8 +16,9 @@
     <div class="container-fluid ">
       <div class="row">
         <nav class="col navbar navbar-expand-lg " style="background-color:rgba(23, 87, 124, 0.315)">
-          <a class="navbar-brand" href="...">
+          <a class="navbar-brand" href="#" style="color:white">
             <img src="../assets/image/logo/logobg.png" width="120" height="70" alt="Artizone's logo">
+            ArtiZone
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,7 @@
           <div id="navbarContent" class="collapse navbar-collapse" >
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="color:white; font-height:15px">Retour à l'accueil</a>
+                <a class="nav-link" href="index.html" style="color:white;border-bottom:1px white; font-height:15px">Retour à l'accueil</a>
               </li>
             </ul>
           </div>
@@ -40,7 +41,8 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                      <img src="../assets/image/art/4.jpg" class="card-img-top" alt="...">
+                      <img src="../assets/image/bg/paintcat.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Peinture/Hoso-doko</h5>
@@ -52,7 +54,8 @@
           <div class="w-27 col-12 col-lg-4">
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
                 <a href="#">
-                    <img src="../assets/image/art/Malgache-Nouvelle-génération.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/dessin.jpg" class="card-img-top" alt="...">
+
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Dessin/Sary</h5>
@@ -62,7 +65,8 @@
           <div class="w-27 col-12 col-lg-4">
             <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                 <a href="#">
-                    <img src="../assets/image/art/60948626.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/sculpture.jpg" class="card-img-top" alt="...">
+
                 </a>
                 <div class="card-body">
                   <h5 class="card-title" style="text-align:center;">Sculpture/Sary sikotra</h5>
@@ -72,7 +76,8 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/bg/raphia1.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/vannerie.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Vannerie/Rary</h5>
@@ -82,7 +87,8 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/bg/raphia.jpg" class="card-img-top" alt="...">
+                    <img src="../assets/image/bg/couture.jpg" class="card-img-top" alt="...">
+
                   </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Coutûre/Zaitra</h5>
@@ -92,8 +98,8 @@
           <div class="w-27 col-12 col-lg-4">
               <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
                   <a href="#">
-                    <img src="../assets/image/art/inde.jpg" class="card-img-top" alt="...">
-                  </a>
+                    <img src="../assets/image/bg/tissage.jpg" class="card-img-top" alt="...">
+                 </a>
                   <div class="card-body">
                     <h5 class="card-title" style="text-align:center;">Tissage/Tenona</h5>
                   </div>
