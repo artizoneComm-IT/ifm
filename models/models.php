@@ -259,13 +259,15 @@ class UpdateIdentities extends ConnectToDb
 		$database = null;
 	}
 
-	public function update_link_profile(array $donnees)
+	public function update_link_profile(string $profile_link, int $id)
 	{
 		try
 		{
 			$database = $this -> db_connect();
 			$requete = $database -> prepare('UPDATE identities SET profile_link = :profile_link WHERE id = :id');
-			$requete -> execute($donnees);
+			$requete -> execute(array(
+				'profile_link' => $profile_link,
+				'id' => $id));
 		}
 
 		catch(PDOException $e)

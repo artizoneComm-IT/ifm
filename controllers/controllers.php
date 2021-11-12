@@ -230,3 +230,56 @@ class ForgotPassword extends SendEmail
 		SendEmail::send_email();
 	}
 }
+
+
+class UploadFile
+{
+	private $defaultValue = null; 
+	private $nom_fichier = null;
+	private $nom_temporaire = null;
+	private $taille = null;
+	private $path = null;
+	private $link = null;
+
+	public function __construct(int $nombre)
+	{
+		$this -> defaultValue = $nombre;
+	}
+
+	public function set_info_fichier(string $nom_fichier, string $nom_temporaire, int $taille, string $path)
+	{
+		$this -> nom_fichier = $nom_fichier;
+		$this -> nom_temporaire = $nom_temporaire;
+		$this -> taille = $taille;
+		$this -> path = $path;
+	}
+
+	public function upload_file()
+	{
+		if($this -> taille <= 10000000)
+		{
+			$informations_fichier = pathinfo($this -> nom_fichier);
+			$extension = $informations_fichier['extension'];
+			$access_extension = ['jpg', 'jpeg', 'gif', 'png'];
+
+			if(in_array($extension, $access_extension))
+			{
+				$image_link = $this -> path.'/'.basename($this -> nom_fichier);
+
+				move_uploaded_file($this -> nom_temporaire, $image_link);
+				return $image_link;
+			}
+		}
+	}
+
+
+	public function set_link(string $link)
+	{
+		$this -> link = str_replace('/opt/lampp/htdocs/ifm-hackathon/ifm', '', $link);
+	}
+
+	public function get_link()
+	{
+		return $this -> link;
+	}
+}
