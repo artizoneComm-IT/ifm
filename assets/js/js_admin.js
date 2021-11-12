@@ -9,13 +9,13 @@ $(document).ready(function()
 				alert('Veuillez choisir une image. Merci !');
 			}
 
-			else
+			/*else
 			{
 				$('#upload_file').hide();
 				$('#loading').show();
-				$.post('../../controllers/admin/upload_file.php', donnees, function(data,status)
+				$.post('../../controllers/admin/upload_file_profile.php', {fichier: $('#fichier').get(0).files}, function(data,status)
 					{
-						if(data == 'success')
+						f(data == 'success')
 						{
 							alert(data);
 						}
@@ -27,6 +27,6 @@ $(document).ready(function()
 							$('#loading').hide();
 						}
 					});
-			}
+			}*/
 		});
 });

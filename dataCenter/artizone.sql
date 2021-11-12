@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : lun. 08 nov. 2021 à 15:21
+-- Généré le : mar. 09 nov. 2021 à 21:17
 -- Version du serveur : 10.4.20-MariaDB
 -- Version de PHP : 8.0.8
 
@@ -56,6 +56,7 @@ CREATE TABLE `files` (
   `id` int(11) NOT NULL,
   `links` varchar(255) DEFAULT NULL,
   `comments` text DEFAULT NULL,
+  `dates` datetime DEFAULT NULL,
   `id_identity` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -83,20 +84,21 @@ CREATE TABLE `formations` (
 CREATE TABLE `identities` (
   `id` int(11) NOT NULL,
   `names` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
+  `last_names` varchar(255) NOT NULL,
   `pseudo` varchar(255) NOT NULL,
-  `birthday` datetime DEFAULT NULL,
-  `phone1` int(11) NOT NULL,
-  `phone2` int(11) NOT NULL,
-  `address` int(11) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
+  `birthday` datetime NOT NULL,
+  `phone1` varchar(255) NOT NULL,
+  `phone2` varchar(255) DEFAULT NULL,
+  `addresses` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `linkedin` varchar(255) DEFAULT NULL,
   `facebook` varchar(255) DEFAULT NULL,
   `work` varchar(255) DEFAULT NULL,
   `work_description` text DEFAULT NULL,
-  `passwords` varchar(255) DEFAULT NULL,
+  `passwords` varchar(255) NOT NULL,
   `profile_link` varchar(255) DEFAULT NULL,
-  `id_categorie` int(11) NOT NULL
+  `id_categorie` int(11) NOT NULL,
+  `dates` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
