@@ -132,8 +132,8 @@
                                 <input class="form-control" type="file" id="formFile">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Prix de votre article:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="...Ar">
+                                <label for="exampleFormControlInput2" class="form-label">Prix de votre article:</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="...Ar">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Description du produit:</label>
