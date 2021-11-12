@@ -18,7 +18,10 @@ body{
     background-color: rgba(43, 255, 6, 0.116);
   }
   p {
-    font-size: 15px;
-    color: white;
+    font-size: 190px;
+    color: rgb(3, 73, 3);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 100px;
+    text-decoration: underline;
+    font-weight: bolder;
   }
