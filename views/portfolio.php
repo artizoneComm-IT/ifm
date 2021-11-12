@@ -24,7 +24,11 @@
       }
       .identite{
           color: white;
-          margin-top: 50px
+          margin-top: 50px;
+      }
+      .contact{
+          border-radius: 20px;
+          background-color:rgba(43, 255, 6, 0.116);
       }
       
     </style>
@@ -114,12 +118,12 @@
     
     <div class="container" style="margin-top:100px">
         <div class="content text-left">
-            <div class="container">
+            <div class="contact">
                 <div class="row">
                     <div class="col-12 col-lg-2"></div>
                     <div class="col-12 col-lg-6">
                         <h1>Contacter</h1>
-                        <div>
+                        <div >
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Adresse mail:</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -136,6 +140,41 @@
                             </div>
                         </div>
                     </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:100px">
+        <div class="couleur_footer">
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="../assets/image/inscription/information.png" alt=" " width="30" height="30">À propos</a>
+                                </li>
+                                <li class="list-inline-item">&middot;</li>
+
+                                <li class="list-inline-item">
+                                    <a href="#"><img src="../assets/image/inscription/copyright.png" alt=" " width="30" height="30">Copyright</a>
+                                </li>
+                                <li class="list-inline-item">&middot;</li>
+
+                                <li class="list-inline-item">
+                                    <a href="mailto:#"><img src="../assets/image/inscription/gmail.png" alt=" " width="30" height="30"> Gmail</a>
+                                </li>
+                                <li class="list-inline-item">&middot;</li>
+
+                                <li class="list-inline-item">
+                                    <a href="#" target="_blank" title="facebook.com/ArtiZone-UP/"><img src="../assets/image/inscription/facebook.png" alt=" " width="30" height="30"> Facebook</a>
+                                </li>
+                                <li class="list-inline-item">&middot;</li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
