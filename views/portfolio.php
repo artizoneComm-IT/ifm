@@ -51,7 +51,11 @@
             <div class="col-12 col-lg-8">
                 <h1>RAKOTO Maria</h1>
                 <h2>Déssinatrice</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit veniam dolor ipsam commodi consequatur eos iste praesentium pariatur labore culpa laboriosam iure, et placeat excepturi optio? Quam reprehenderit, iste praesentium quia voluptatibus tempore atque a eius? Debitis dicta vero voluptatum repudiandae ducimus, aspernatur voluptate eligendi at, mollitia aliquid aut blanditiis sapiente ipsa autem, ipsam labore corrupti numquam dignissimos eum. Accusamus a facere deleniti sed aliquid ullam debitis tenetur dolore tempora? At quasi earum omnis sapiente, quas ipsam quidem facere doloremque! Itaque, pariatur culpa. Quia ipsam consequuntur dolorem itaque debitis eum esse vel, dignissimos mollitia nam ducimus aliquid rem temporibus asperiores! Odit amet quisquam quod assumenda fugiat odio, delectus voluptate suscipit veritatis, ipsum dicta totam, ducimus rerum? Harum, dolorem deserunt!</p>
+                <h2>contact</h2>
+                <h2>addresse</h2>
+                <h2>Déssimetier</h2>
+                <h2>description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste ipsa, enim tenetur asperiores dolore quod dolorem unde molestias magnam.</p>
             </div>
             <div class="col-12 col-lg-4">
                 <img src="../assets/image/bg/profil.jpg" alt="profil" width="350" height="400" >
@@ -65,12 +69,32 @@
                 <img src="../assets/image/bg/profil.jpg" alt="profil" width="350" height="400">
             </div>
             <div class="col-12 col-lg-6">
-                <h1>RAKOTO Marino</h1>
+                <h1>Formation</h1>
                 <h2>Déssinateur</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit veniam dolor ipsam commodi consequatur eos iste praesentium pariatur labore culpa laboriosam iure, et placeat excepturi optio? Quam reprehenderit, iste praesentium quia voluptatibus tempore atque a eius? Debitis dicta vero voluptatum repudiandae ducimus, aspernatur voluptate eligendi at, mollitia aliquid aut blanditiis sapiente ipsa autem, ipsam labore corrupti numquam dignissimos eum. Accusamus a facere deleniti sed aliquid ullam debitis tenetur dolore tempora? At quasi earum omnis sapiente, quas ipsam quidem facere doloremque! Itaque, pariatur culpa. Quia ipsam consequuntur dolorem itaque debitis eum esse vel, dignissimos mollitia nam ducimus aliquid rem temporibus asperiores! Odit amet quisquam quod assumenda fugiat odio, delectus voluptate suscipit veritatis, ipsum dicta totam, ducimus rerum? Harum, dolorem deserunt!</p>
+                <p>nmobre de formation</p>
+                <p>date</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa consequuntur nisi facere beatae eius, officia aliquid iusto illum voluptatem quasi.</p>
             </div>
         </div>
     </div>
-   
+    
+    <div class="container" style="margin-top:100px">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <h1>Expérience</h1>
+                <h2>Déssinatrice</h2>
+                <p>date</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste ipsa, enim tenetur asperiores dolore quod dolorem unde molestias magnam.</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <img src="../assets/image/bg/profil.jpg" alt="profil" width="350" height="400" >
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-top:100px">
+        <h1>conctact mandefa mail</h1>
+        <button disabled="disabled"></button>
+    </div>
   </body>
 </html>
