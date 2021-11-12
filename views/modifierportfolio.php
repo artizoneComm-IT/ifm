@@ -29,7 +29,10 @@
           border-radius: 20px;
           background-color:rgba(43, 255, 6, 0.116);
       }
-      
+      .modification{
+          font-size: 30px;
+          text-decoration:none;
+      }
     </style>
   </head>
   <body>
@@ -37,7 +40,7 @@
         <div class="row" >
             <nav class="col navbar  fixed-top navbar-expand-lg bg-dark navbar-dark" >
                 <a class="navbar-brand" href="...">
-                    <img src="../assets/image/logo/logo1.png" width="120" height="70" alt="Site logo">
+                    <img src="../assets/image/logo/logo1.png" width="130" height="70" alt="Site logo">
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -74,6 +77,7 @@
                     <h2>Déssimetier</h2>
                     <h2>description</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste ipsa, enim tenetur asperiores dolore quod dolorem unde molestias magnam.</p>
+                    <a href="modification.php" class="modification">Modifier</a>
                 </div>
             </div>
             <div class="col-12 col-lg-3"></div>
@@ -114,28 +118,28 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container" style="margin-top:100px">
         <div class="content text-left">
             <div class="contact">
                 <div class="row">
                     <div class="col-12 col-lg-2"></div>
                     <div class="col-12 col-lg-6">
-                        <h1>Contacter</h1>
+                        <h1>Ajouter un article</h1>
                         <form action="">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Adresse mail:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <label for="formFile" class="form-label">Veuillez séléctionner l'image de votre produit</label>
+                                <input class="form-control" type="file" id="formFile">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Mot de passe:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <label for="exampleFormControlInput1" class="form-label">Prix de votre article:</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="...Ar">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Votre message:</label>
+                                <label for="exampleFormControlTextarea1" class="form-label">Description du produit:</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 <div class="content text-center">
-                                    <button type="button" class="btn btn-primary" style="margin-top:30px">Envoyer</button>
+                                    <button type="button" class="btn btn-primary" style="margin-top:30px">Enregistrer</button>
                                 </div>
                             </div>
                         </form>
@@ -179,8 +183,6 @@
             </div>
         </div>
     </div>
-
-    
 
     <script>
         var nav = document.querySelector('nav');
