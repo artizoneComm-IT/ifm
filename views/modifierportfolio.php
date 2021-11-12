@@ -29,7 +29,10 @@
           border-radius: 20px;
           background-color:rgba(43, 255, 6, 0.116);
       }
-      
+      .modification{
+          font-size: 30px;
+          text-decoration:none;
+      }
     </style>
   </head>
   <body>
@@ -37,7 +40,7 @@
         <div class="row" >
             <nav class="col navbar  fixed-top navbar-expand-lg bg-dark navbar-dark" >
                 <a class="navbar-brand" href="...">
-                    <img src="../assets/image/logo/logo1.png" width="120" height="70" alt="Site logo">
+                    <img src="../assets/image/logo/logo1.png" width="130" height="70" alt="Site logo">
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -74,6 +77,7 @@
                     <h2>Déssimetier</h2>
                     <h2>description</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste ipsa, enim tenetur asperiores dolore quod dolorem unde molestias magnam.</p>
+                    <a href="modification.php" class="modification">Modifier</a>
                 </div>
             </div>
             <div class="col-12 col-lg-3"></div>
@@ -114,120 +118,6 @@
             </div>
         </div>
     </div>
-    
-
-    <div class="container" style="margin-top:10%" >
-        <p style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">
-          OEUVRES - ASA TANANA
-        </p>
-        <div class="row " >
-          <div class="w-27 col-12 col-lg-4">
-              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                  <a href="#">
-                      <img src="../assets/image/art/1.png" class="card-img-top" alt="...">
-
-                  </a>
-                  <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-              </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4">
-            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
-                <a href="#">
-                    <img src="../assets/image/art/11.jpg" class="card-img-top" alt="...">
-
-                </a>
-                <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY ROFIA</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">18 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-            </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4">
-            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                <a href="#">
-                    <img src="../assets/image/art/1.jpg" class="card-img-top" alt="...">
-
-                </a>
-                <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">POKETRA</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">17 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-            </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
-              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                  <a href="#">
-                    <img src="../assets/image/art/6.jpg" class="card-img-top" alt="...">
-
-                  </a>
-                  <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">SANDRIFY</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">8 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-              </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
-              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                  <a href="#">
-                    <img src="../assets/image/art/5.jpg" class="card-img-top" alt="...">
-
-                  </a>
-                  <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">TSIHY</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">20 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-              </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
-              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                  <a href="#">
-                    <img src="../assets/image/art/10.jpg" class="card-img-top" alt="...">
-                 </a>
-                 <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">BAZARY</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-              </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
-              <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)" >
-                  <a href="#">
-                      <img src="../assets/image/art/s1.jpg" class="card-img-top" alt="...">
-
-                  </a>
-                  <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: green">SEZA KELY</h3> <br>
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">15 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-              </div>
-          </div>
-          <div class="w-27 col-12 col-lg-4" style="margin-top:2%">
-            <div class="card" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 1)">
-                <a href="#">
-                    <img src="../assets/image/art/s2.jpg" class="card-img-top" alt="...">
-
-                </a>
-                <div class="card-body">
-                <h3 class="card-title" style="font-weight:bold ;text-align:center; color: red">VATA KELY</h3>  <br>           
-                    <h5> Prix: <span style="font-weight:bold ; text-align:center;">18 000 Ar</span></h5>
-                    <a href="#" class="btn btn-warning" >Acheter</a>
-                </div>
-          </div>
-        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                  
-      </div>
-    
-
-
 
     <div class="container" style="margin-top:100px">
         <div class="content text-left">
@@ -235,21 +125,21 @@
                 <div class="row">
                     <div class="col-12 col-lg-2"></div>
                     <div class="col-12 col-lg-6">
-                        <h1>Contacter</h1>
+                        <h1>Ajouter un article</h1>
                         <form action="">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Adresse mail:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <label for="formFile" class="form-label">Veuillez séléctionner l'image de votre produit</label>
+                                <input class="form-control" type="file" id="formFile">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput2" class="form-label">Mot de passe:</label>
-                                <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                                <label for="exampleFormControlInput2" class="form-label">Prix de votre article:</label>
+                                <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="...Ar">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Votre message:</label>
+                                <label for="exampleFormControlTextarea1" class="form-label">Description du produit:</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 <div class="content text-center">
-                                    <button type="button" class="btn btn-primary" style="margin-top:30px">Envoyer</button>
+                                    <button type="button" class="btn btn-primary" style="margin-top:30px">Enregistrer</button>
                                 </div>
                             </div>
                         </form>
@@ -293,8 +183,6 @@
             </div>
         </div>
     </div>
-
-    
 
     <script>
         var nav = document.querySelector('nav');
