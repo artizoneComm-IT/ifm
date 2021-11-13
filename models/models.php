@@ -44,8 +44,8 @@ class InsertInformationsArtisants extends ConnectToDb
 
 				/* la requete SQL qui faire une insertion d'informations dans la table 'identities'...
 				Cependant, on prépare la requete puisqu'on attend encore des données venant de l'utilisateur*/
-			$requete = $database -> prepare('INSERT INTO identities(names, last_names, pseudo, birthday, phone1, phone2, addresses, email, passwords, id_categorie, dates)
-				VALUES(:names, :last_name, :pseudo, :birthday, :phone1, :phone2, sha2(:addresses, 256), :email, :password, :id_categorie, NOW())'); 
+			$requete = $database -> prepare('INSERT INTO identities(names, last_names, pseudo, phone1, phone2, addresses, email, passwords, id_categorie)
+				VALUES(:names, :last_names, :pseudo, :phone1, :phone2, :addresses, :email, sha2(:addresses, 256), :id_categorie)'); 
 
 			$requete -> execute($donnees);
 		}

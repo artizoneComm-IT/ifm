@@ -1,24 +1,33 @@
-body {
+body 
+{
 	font-family: 'Poppins';
 }
 
-header .carousel-inner .item {
+header .carousel-inner .item 
+{
 	height: 100vh;
 }
-.navbar-brand img {
+
+.navbar-brand img 
+{
     height: 100;
     width: 500;
 }
-.navbar-inverse {
+
+.navbar-inverse 
+{
 	background-color: transparent;
 	border-color: transparent;
 }
-.navbar-inverse .navbar-brand {
+
+.navbar-inverse .navbar-brand 
+{
 	color: #fff;
 	font-size: 40px;
 	padding: 40px 15px;
 	font-weight: 900;
 }
+
 .nav.navbar-nav.navbar-right {
 	margin: 45px 0;
 }
@@ -29,32 +38,42 @@ header .carousel-inner .item {
 	text-transform: uppercase;
 	font-size: 15px;
 }
+
 .navbar-inverse .navbar-nav>li>a:hover {
 	font-weight: bold;
 }
+
 .navbar-inverse .navbar-nav>li>p:hover{
 	background-color: greenyellow;
 }
-.banner {
+
+.banner 
+{
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+
 .carousel-caption {
 	padding-bottom: 100px;
 	font-family: poppins;
 }
-.carousel-caption h2 {
+
+.carousel-caption h2 
+{
 	font-size: 70px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
 .carousel-caption h2 span {
 	color: #15f733;
 }
-.carousel-caption a {
+
+.carousel-caption a 
+{
 	background: #15f733;
 	padding: 15px 35px;
 	display: inline-block;
@@ -63,27 +82,38 @@ header .carousel-inner .item {
 	text-transform: uppercase;
 	border-radius: 25px;
 }
-.carousel-control.right {
+
+.carousel-control.right 
+{
 	background-image: none;
 }
-.carousel-control.left {
+
+.carousel-control.left 
+{
 	background-image: none;
 }
-.carousel-indicators .active {
+
+.carousel-indicators .active 
+{
 	background-color: #15f733;
 	border-color: #15f733;
 }
+
 /*responsive css*/
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-caption {
+@media only screen and (min-width: 768px) and (max-width: 991px) 
+{
+	.carousel-caption 
+	{
 		padding-bottom: 350px;
 	}
 	.carousel-caption h2 {
 		font-size: 50px;
 	}
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) 
+{
 	.navbar-inverse .navbar-brand {
 		font-size: 30px;
 		padding: 20px 15px;

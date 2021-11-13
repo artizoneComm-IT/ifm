@@ -1,5 +1,7 @@
 $(document).ready(function()
 	{
+		$('#login').hide();
+		$('#login').show(1000);
 		$('#erreur').hide();
 		$('#loading').hide();
 
@@ -27,7 +29,7 @@ $(document).ready(function()
 						{
 							if(data == '1')
 							{
-								window.location.replace('view.php');
+								window.location.replace('admin/portfolio.php');
 							}
 
 							else
@@ -74,7 +76,6 @@ $(document).ready(function()
 								alert(data);
 								$('#loading').hide();
 								$('#envoyer').show();
-
 							}
 						});
 				}

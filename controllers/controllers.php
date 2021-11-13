@@ -106,12 +106,11 @@ class GetInfoCreateAccount
 		$this -> defaultValue = $nombre;
 	}
 
-	public function setinfo(string $names, string $last_names, string $pseudo, string $birthday, string $phone1, string $phone2, string $addresses, string $email, string $passwords, int $id_categorie)
+	public function setinfo(string $names, string $last_names, string $pseudo, string $phone1, string $phone2, string $addresses, string $email, string $passwords, int $id_categorie)
 	{
 		$this -> names = strip_tags(ucwords($names));
 		$this -> last_names = strip_tags(ucwords($last_names));
 		$this -> pseudo = strip_tags(ucwords($pseudo));
-		$this -> birthday = strip_tags($birthday);
 		$this -> phone1 = strip_tags(trim($phone1));
 		$this -> phone2 = strip_tags(trim($phone2));
 		$this -> addresses = strip_tags($addresses);
@@ -126,10 +125,9 @@ class GetInfoCreateAccount
 			'names' => $this -> names,
 			'last_names' => $this -> last_names,
 			'pseudo' => $this -> pseudo,
-			'birthday' => $this -> birthday,
 			'phone1' => $this -> phone1,
 			'phone2' => $this -> phone2,
-			'addressses' => $this -> addressses,
+			'addresses' => $this -> addresses,
 			'email' => $this -> email,
 			'passwords' => $this -> passwords,
 			'id_categorie' => $this -> id_categorie);

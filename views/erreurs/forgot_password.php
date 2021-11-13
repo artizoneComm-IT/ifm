@@ -7,22 +7,38 @@
 	<title>Artizone-Forgot password</title>
 	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/loading.css">
+	<link rel="stylesheet" href="../../assets/css/css_additionnels.css">
 </head>
 <body>
 	<header>
-		<div class="container mt-5">
-			<div class="row">
-				<div class="col-12">
-					
-				</div>
-			</div>
-		</div>
+		<div class="couleur_header">
+	        <div class="container">
+	            <div class="row">
+	                <nav class="col navbar navbar-expand-md navbar-light navbar-inverse">
+	                    <a href="../../index.php" class="navbar-brand font-weight-bold">
+	                    <img src="../../assets/image/logo/logobg.png" alt="logo of Artizone" width="100" height="50" class="logo_artizone">
+	                        <span class="nom_artizone ml-3 font-weight-bold text-primary">ArtiZone</span>
+	                    </a>
+	                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+	                        <span class="navbar-toggler-icon"></span>
+	                    </button>
+	                    <div id="navbarContent" class="collapse navbar-collapse">
+	                        <ul class="navbar-nav">
+	                            <li class="nav-item active">
+	                                <a href="../../index.php" class="nav-link menu">Accueil</a>
+	                            </li>							
+	                        </ul>
+	                    </div>
+	                </nav>
+	            </div>
+	        </div>
+	    </div>
 	</header>
 	<section>
 		<div class="container">
 			<div class="row form-group">
 				<div class="col-12 col-md-3"></div>
-				<div class="col-12 col-md-6  border shadow rounded p-3">
+				<div class="col-12 col-md-6  border shadow rounded bg-light p-3">
 					<p class="text-warning">Pour la récupération de votre mot de passe, veuillez bien saisir votre email. <br>
 					Merci de votre compréhension !</p>
 

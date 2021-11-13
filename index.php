@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- shortcut icon -->
-    <link rel="shortcut icon" href="assets/images/logo/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/image/logo/logo.ico" type="image/x-icon">
 
     <title>ArtiZone</title>
     <!-- font awesome -->
@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                         <img src="assets/image/logo/logo1.png" alt="ArtiZon's logo" width="120" height="70">
                     </a>
                 </div>
@@ -40,11 +40,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" >Accueil</a></li>
+                        <li><a href="index.php" >Accueil</a></li>
                         <li><a href="#">Artisans</a></li>
                         <li><a href="#">Gallerie</a></li>
-                        <li><a href="#">Catégories</a></li>
-                        <li><a href="#" class="connect" style="font-weight:bold; color:#15f733">Se connecter</a></li>
+                        <li><a href="views/categories.php">Catégories</a></li>
+                        <li><a href="views/login.php" class="btn btn-primary">Se connecter</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

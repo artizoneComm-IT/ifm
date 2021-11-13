@@ -1,12 +1,15 @@
 /* body {
     background-image: url("../image/bg/baobab.jpg");
 } */
-.accueil {
+.accueil 
+{
     color: black;
     font-size: 15px;
     font-family: 'poppins';
 }
-.accueil:hover {
+
+.accueil:hover 
+{
     font-weight: bold;
 }
 
@@ -18,13 +21,13 @@
     background-color: transparent;
 }
 
-.logo_ArtiZone
+.logo_artizone
 {
     border-radius: 13px;
     border: 1px inset white;
 }
 
-p
+/*p
 {
     color: rgba(38, 118, 119, 1.0);
     font-size: 1.3em;
@@ -47,12 +50,55 @@ p
     font-family: 'Z003';
     text-decoration: none;
     font-size: 1.9em;
-}
+}*/
 
-.instruction
+/*.instruction
 {
     font-family: 'Z003';
     font-size: larger;
     background-color: rgba(38, 118, 119, 1.0);
     color: white;
+}*/
+
+.couleur_header
+{
+    background-color: transparent;
 }
+
+.nom_artizone
+{
+    font-family: 'Z003';
+    /*color: rgba(3, 170, 25, 1);*/
+    font-size: 2.3em;
+}
+
+.menu
+{
+    font-size:25px;
+    color:white;
+}
+
+.menu:hover 
+{
+    color: green;
+    font-weight: bold;
+}
+
+body
+{
+    background-image: url('../image/bg/baobab.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+section
+{
+    /*margin-top: 100px;*/
+}
+
+.tab 
+{
+    background-color: white;
+}
+
