@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/image/logo/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/categorie.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Categories</title>
@@ -17,7 +18,7 @@
       <div class="row">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
      <div class="container">
-     <img class="logo_ArtiZone shadow" src="../assets/image/logo/logobg.png" alt="ArtiZone'logo" width="120" height="70">         <button
+     <img class="logo_ArtiZone shadow" src="../assets/image/logo/logobg.png" alt="ArtiZone'logo" width="120" height="70" style="border-radius:13px;">         <button
             type="button"
             class="navbar-toggler"
             data-bs-target="navbarNav"
@@ -33,19 +34,19 @@
              <div class="mx-auto"></div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"> <span style="color:green; font-size:15px; font-weight:bold">Accueil</span> </a>
+                    <a href="../index.php" class="nav-link text-white"> <span style="color:white; font-size:20px; font-weight:bold">Accueil</span> </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white" ><span style="color:green; font-size:15px; font-weight:bold">Gallerie</span></a>
+                    <a href="gallerie.php" class="nav-link text-white" ><span style="color:white; font-size:20px; font-weight:bold">Gallerie</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Catégories</span></a>
+                    <a href="categorie.php" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Catégories</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Artisans</span></a>
+                    <a href="#" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Artisans</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white"><span style="color:green; font-size:15px; font-weight:bold">Se connecter</span></a>
+                    <a href="login.php" class="nav-link text-white"><span style="color:white; font-size:20px; font-weight:bold">Se connecter</span></a>
                 </li>
             </ul>
          </div>

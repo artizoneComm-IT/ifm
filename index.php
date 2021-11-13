@@ -42,7 +42,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.php" >Accueil</a></li>
                         <li><a href="#">Artisans</a></li>
-                        <li><a href="#">Gallerie</a></li>
+                        <li><a href="views/gallerie.php">Gallerie</a></li>
                         <li><a href="views/categories.php">Catégories</a></li>
                         <li><a href="views/login.php" class="btn btn-primary">Se connecter</a></li>
                     </ul>

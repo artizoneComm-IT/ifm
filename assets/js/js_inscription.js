@@ -1,5 +1,7 @@
 $(document).ready(function()
     {
+        $('#identites').hide();
+        $('#identites').show(1000);
         $('#envoyer').click(function()
             {
                 if($('#names').val().trim().length === 0)

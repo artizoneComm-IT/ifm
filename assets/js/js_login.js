@@ -29,7 +29,7 @@ $(document).ready(function()
 						{
 							if(data == '1')
 							{
-								window.location.replace('admin/portfolio.php');
+								window.location.replace('admin/modifierportfolio.php');
 							}
 
 							else

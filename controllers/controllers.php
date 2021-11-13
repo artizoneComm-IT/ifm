@@ -273,11 +273,62 @@ class UploadFile
 
 	public function set_link(string $link)
 	{
-		$this -> link = str_replace('/opt/lampp/htdocs/ifm-hackathon/ifm', '', $link);
+		$this -> link = str_replace('/opt/lampp/htdocs/ifm', '', $link);
 	}
 
 	public function get_link()
 	{
 		return $this -> link;
+	}
+}
+
+class Achat extends SendEmail
+{
+	private $defaultValue = null;
+	private $nom = null;
+	private $prenoms = null;
+	private $cin = null;
+	private $email = null;
+	private $date = null;
+	private $heure = null;
+
+	public function __construct(int $nombre)
+	{
+		$this-> defaultValue = $nombre;
+	}
+
+	public function set_info(string $nom, string $prenoms, string $cin, string $email, string $date, string $heure)
+	{
+		$this -> nom = strip_tags($nom);
+		$this -> prenoms = strip_tags($prenoms);
+		$this -> cin = strip_tags($cin);
+		$this -> email = strip_tags($email);
+		$this -> date = strip_tags($date);
+		$this -> heure = strip_tags($heure);
+	}
+
+	public function send_mail_achat()
+	{
+		$messages = '<h3>ArtiZone</h3>
+			Bien le bonjour !<br>
+			<b><i>Monsieur/Madame '.$this -> nom.' '.$this -> prenoms.'</i></b>
+			<p>Avec tout votre respect, voici ci-joint la confirmation de votre achat sur ArtiZone.</p>
+			<p>
+				<b>BAZARY</b><br>
+				<b>Prix:</b>15 000 Ar<br>
+				<b>Artisant:</b> Jonquille Sonia<br>
+			</p>
+			<p>
+				<h3><u>Vos coordonnées:</u></h3>
+				<b>Nom: '.$this -> nom.'</b><br>
+				<b>Prénom(s): '.$this -> prenoms.'</b><br>
+				<b>N° de CIN: '.$this -> cin.'</b><br>
+				<b>Email: '.$this -> email.'</b><br>
+				<b>La date de livraison: '.$this -> date.'</b><br>
+				<b>Heure: '.$this -> heure.'</b><br>
+			</p>
+			<p>Merci de votre confiance et votre aimable attention !<br>Respectuesement';
+		SendEmail::set_data($this -> email, $this -> nom, 'Achat sur ArtiZone', $messages);
+		SendEmail::send_email();
 	}
 }

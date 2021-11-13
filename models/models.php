@@ -42,10 +42,10 @@ class InsertInformationsArtisants extends ConnectToDb
 		{
 			$database = $this -> db_connect(); // connexion à la base de données...
 
-				/* la requete SQL qui faire une insertion d'informations dans la table 'identities'...
+				/* la requete SQL qui fait une insertion d'informations dans la table 'identities'...
 				Cependant, on prépare la requete puisqu'on attend encore des données venant de l'utilisateur*/
 			$requete = $database -> prepare('INSERT INTO identities(names, last_names, pseudo, phone1, phone2, addresses, email, passwords, id_categorie)
-				VALUES(:names, :last_names, :pseudo, :phone1, :phone2, :addresses, :email, sha2(:addresses, 256), :id_categorie)'); 
+				VALUES(:names, :last_names, :pseudo, :phone1, :phone2, :addresses, :email, sha2(:passwords, 256), :id_categorie)'); 
 
 			$requete -> execute($donnees);
 		}
@@ -194,13 +194,15 @@ class GetInformationsArtisant extends ConnectToDb
 		$this -> defaultValue = $nombre;
 	}
 
-	public function get_identities(array $donnees)
+	public function get_identities(int $id)
 	{
 		try
 		{
 			$database = $this -> db_connect();
-			$reponse = $database -> prepare('SELECT names, last_names, pseudo, phone1, phone2, addresses, email, linkedin, facebook, work, work_description, id_categorie FROM identities WHERE id = :id');
-			$reponse -> execute($donnees);
+			$reponse = $database -> prepare('SELECT names, last_names, pseudo, phone1, phone2, addresses, email, linkedin, facebook, work, work_description, profile_link, id_categorie FROM identities WHERE id = :id');
+			$reponse -> execute(array(
+				'id' => $id));
+			return $reponse;
 		}
 
 		catch(PDOException $e)

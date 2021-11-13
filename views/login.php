@@ -30,7 +30,7 @@
                                 <a href="../index.php" class="nav-link menu">Accueil</a>
                             </li>			
                             <li class="nav-item active">
-                                <a href="info_inscription.php" class="nav-link menu">S'inscrire</a>
+                                <a href="inscription.php" class="nav-link menu">S'inscrire</a>
                             </li>							
                         </ul>
                     </div>
