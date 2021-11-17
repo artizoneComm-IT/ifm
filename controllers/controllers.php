@@ -37,7 +37,7 @@ class SendEmail
 			$email -> Host = 'smtp.gmail.com';
 			$email -> SMTPAuth =  true;
 			$email -> Username = 'lahatrap20.aps2a@gmail.com';
-			$email -> Password = '299792458m/S/tsiory';
+			$email -> Password = '';
 			$email -> SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 			$email -> Port = 587;
 
